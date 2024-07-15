@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Викторина Знаний</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Викторина Знаний</h1>
+            <p>Ваш надежный помощник в изучении нового</p>
+        </header>
+        <main>
+            <section class="intro">
+                <h2>Добро пожаловать на Викторину Знаний</h2>
+                <p>Улучшайте свои знания с помощью интересных викторин и познавательных фактов!</p>
+            </section>
+            <section class="game">
+                <h2>Начните игру</h2>
+                <button id="startButton">Начать Викторину</button>
+                <div id="gameArea"></div>
+            </section>
+            <section class="learn">
+                <h2>Узнайте больше</h2>
+                <div class="card-grid">
+                    <div class="card" onclick="showContent('topic1')">
+                        <div class="front">Природа</div>
+                        <div class="back">Интересные факты о природе</div>
+                    </div>
+                    <div class="card" onclick="showContent('topic2')">
+                        <div class="front">Космос</div>
+                        <div class="back">Интересные факты о космосе</div>
+                    </div>
+                    <div class="card" onclick="showContent('topic3')">
+                        <div class="front">Наука</div>
+                        <div class="back">Интересные факты о науке</div>
+                    </div>
+                </div>
+                <div id="learnContent"></div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Викторина Знаний. Все права защищены.</p>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
